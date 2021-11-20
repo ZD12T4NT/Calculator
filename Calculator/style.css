@@ -1,0 +1,149 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+    font-weight: normal;
+}
+
+body{
+ padding: 0;/*removes all padding and margin*/
+ margin:0;
+ /*background: linear-gradient(to right, #F39C12, #E74C3C, #7B241C); this mixs the colors so they fade into eachother*/
+ background: #A9A9A9;
+}
+
+
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh; /*will fill 100% of the height all the time*/
+    grid-template-columns: repeat(4, 100px); /*4 columns at 100px wide*/
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+}
+
+
+
+.calculator-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #FAF9F6;
+    outline:none;
+    background-color: #FAF9F6;
+    border-radius: 20px;
+    margin: 5px;
+    
+}
+
+
+
+
+.calculator-grid > button:hover{
+    background: #fff;
+}
+
+
+.span-two{
+    grid-column: span 2;
+}
+
+
+
+.output{
+    grid-column: 1 /-1;/*this will make the output class go from the 1st column to the last*/
+    background-color:rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding:10px;
+    margin: 4px;
+    word-wrap: break-word;
+    word-break: break-all;/*this will make the numbers move to the next line onece the box gets filled*/
+    border-radius: 15px;
+}
+
+.output .previous-operand{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+
+
+
+.output .current-operand{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+
+#AC{
+    background: crimson;
+    border:crimson;
+    color: #fff;
+}
+
+#AC:hover{
+    background:#DE3163 ;
+}
+
+
+#Equals{
+    background: #2ECC71;
+    border: #2ECC71;
+    color: #fff;
+}
+
+#Equals:hover{
+    background: #50C878;
+}
+
+#purple{
+    background: #4A235A;
+    border: #4A235A;
+    color: #fff;
+}
+
+#purple:hover{
+    background: #630330;
+}
+
+#purpl{
+    background: #4A235A;
+    border: #4A235A;
+    color: #fff;
+}
+
+#purpl:hover{
+    background: #630330;
+}
+
+#purp{
+    background: #4A235A;
+    border: #4A235A;
+    color: #fff;
+}
+
+#purp:hover{
+    background: #630330;
+}
+
+#pur{
+    background: #4A235A;
+    border: #4A235A;
+    color: #fff;
+}
+
+#pur:hover{
+    background: #630330;
+}
+
+#pu{
+    background: #4A235A;
+    border: #4A235A;
+    color: #fff;
+}
+
+#pu:hover{
+    background: #630330;
+}
